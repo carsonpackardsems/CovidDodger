@@ -17,6 +17,9 @@ implements ActionListener, KeyListener{
 	Font smallerText;
 	Timer frameDraw;
 	Covid_Connor Connor;
+	int timesHit= 0;
+	boolean end = false;
+	boolean success = false;
 	int tier = 0;
 	int timesDodged = 0;
 	GamePanel(){
@@ -60,7 +63,7 @@ implements ActionListener, KeyListener{
 	}else if(timesDodged == 66) {
 		tier = 2;
 	}else if(timesDodged == 100) {
-		success
+		success = true;
 	}
 
 	void drawMenuState(Graphics g) {
