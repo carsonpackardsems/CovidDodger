@@ -1,12 +1,12 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class GameObject extends GamePanel{
+public class GameObject{
 int x;
 int y;
 int width;
 int height;
-int speed = 10;
+static int speed = 10;
 boolean isActive = true;
 GameObject(int x, int y, int width, int height){
 	this.x = x;

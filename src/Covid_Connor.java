@@ -13,10 +13,12 @@ public class Covid_Connor extends GameObject{
 		down = false;
 		left = false;
 		right = false;
+	GameObject.speed = 10;
+		
 		// TODO Auto-generated constructor stub
 	}
 	void draw(Graphics g) {
-		 g.setColor(Color.RED);
+		 g.setColor(Color.BLUE);
 	        g.fillRect(x, y, width, height);
 	}
 	
@@ -46,5 +48,16 @@ public class Covid_Connor extends GameObject{
 	}
 	public void right() {
 	    x+=speed;
+	}{
+	if(x >= 0) {
+		x = 25;
 	}
+	if(y >= 0) {
+	y = 25;
 }
+	if(y >= 500) {
+		y = 475;
+	}
+	}
+	}
+

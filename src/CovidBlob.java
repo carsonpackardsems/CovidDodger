@@ -6,8 +6,8 @@ public class CovidBlob extends GameObject{
 
 	CovidBlob(int x, int y, int width, int height) {
 		super(x, y, width, height);
-		speed = 1;
-		// TODO Auto-generated constructor stub
+		speed = 5;
+		// TODO auto-generated constructor stub
 	}
 	public void update() {
 		x-=speed;
@@ -15,7 +15,7 @@ public class CovidBlob extends GameObject{
 		if(x == 25) {
 			x = 825;
 			y = ran.nextInt(500);
-			timesDodged++;
+			GamePanel.timesDodged++;
 		}
 	}
 	void draw(Graphics g) {
